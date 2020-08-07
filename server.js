@@ -1,6 +1,13 @@
 const express = require("express");
 
 const app = express();
+const connectDB = require("./config/db");
+
+//connect to MongoDB
+connectDB();
+
+// Middleware init
+app.use(express.json({ extended: false }));
 
 app.use("/api/users", require("./routes/users"));
 app.use("/api/contacts", require("./routes/contacts"));
