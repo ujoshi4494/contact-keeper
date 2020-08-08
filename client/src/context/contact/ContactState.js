@@ -73,7 +73,7 @@ const ContactState = (props) => {
         contact,
         config
       );
-      dispatch({ type: UPDATE_CONTACT, payload: contact });
+      dispatch({ type: UPDATE_CONTACT, payload: res.data });
     } catch (err) {
       dispatch({ type: CONTACT_ERROR, payload: err.response.msg });
     }
