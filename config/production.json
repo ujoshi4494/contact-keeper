@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://umang_123:umang123@contactkeeper.ux1lv.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "contact-keeper"
+}
